@@ -1,16 +1,23 @@
-import React from 'react'
+import React from "react";
+import Hero from "@/components/Hero";
+import InfoBoxes from "@/components/InfoBoxes";
+import HomeProperties from "@/components/HomeProperties";
+import FeaturedProperties from "@/components/FeaturedProperties";
 
 export const metadata = {
-    title: 'Rental',
-    description: 'Find your dream home',
-    keywords: 'rental, find rentals',
-}
+  title: "Rental",
+  description: "Find your dream home",
+  keywords: "rental, find rentals",
+};
 const HomePage = () => {
   return (
-    <div>
-      HomePage
-    </div>
-  )
-}
+    <>
+      <Hero />
+      <InfoBoxes />
+      <FeaturedProperties />
+      <HomeProperties />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
